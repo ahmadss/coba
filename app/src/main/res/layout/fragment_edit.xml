@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="12dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#F9F9F9"
+        tools:context="com.androidlokomedia.k.EditFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:id="@+id/editKicon"
+            android:src="@drawable/j"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="15dp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kScrollEdit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/editKicon"
+            android:layout_alignBottom="@+id/editKicon">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Judul Kegiatan"
+                android:minLines="1"
+                android:inputType="text"
+                android:id="@+id/editKJudul"/>
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kScrollEdit"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW TEXT"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:background="@null"
+                android:id="@+id/editKketerangan"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpanK"
+            android:text="Simpan Kegiatan"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/kScrollEdit"/>
+
+    </RelativeLayout>
+
